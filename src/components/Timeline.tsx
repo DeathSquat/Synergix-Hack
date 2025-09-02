@@ -53,7 +53,10 @@ const Timeline = () => {
   ];
 
   return (
-    <section id="timeline" className="py-20 bg-gradient-card">
+    <section
+      id="timeline"
+      className="py-20 bg-gradient-card bg-[url('/3.jpg')] bg-cover bg-center bg-no-repeat"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
@@ -63,6 +66,7 @@ const Timeline = () => {
             Follow our comprehensive schedule to make the most of your SYNERGIX experience
           </p>
         </div>
+
 
         <div className="max-w-4xl mx-auto">
           <div className="relative">
