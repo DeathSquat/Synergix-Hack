@@ -65,7 +65,7 @@ const Team = () => {
 
   return (
     <section id="team" 
-    className="py-20 bg-gradient-card bg-[url('/7.jpg')] bg-cover bg-center bg-no-repeat">
+    className="py-20 bg-gradient-card bg-[url('public/7.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
