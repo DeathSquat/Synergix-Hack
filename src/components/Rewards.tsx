@@ -66,7 +66,8 @@ const Rewards = () => {
 
   return (
     <section id="rewards" 
-    className="py-20 bg-gradient-card bg-[url('5.jpg')] bg-cover bg-center bg-no-repeat">
+    className="py-20 bg-gradient-card bg-cover bg-center bg-no-repeat"
+    style={{ backgroundImage: 'url("5.jpg")' }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">

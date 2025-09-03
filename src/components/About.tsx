@@ -26,9 +26,11 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-background relative ">
-      <div className="absolute inset-0 w-full h-full bg-no-repeat bg-cover bg-center opacity-30 z-0"
-        style={{ backgroundImage: 'url("2.jpg")' }} />
+    <section
+      id="about"
+      className="py-20 bg-gradient-card bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: 'url("2.jpg")' }}
+    >
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">

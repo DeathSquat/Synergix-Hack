@@ -55,7 +55,8 @@ const Timeline = () => {
   return (
     <section
       id="timeline"
-      className="py-20 bg-gradient-card bg-[url('3.jpg')] bg-cover bg-center bg-no-repeat"
+      className="py-20 bg-gradient-card bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: 'url("3.jpg")' }}
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
