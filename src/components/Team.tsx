@@ -6,9 +6,9 @@ const Team = () => {
   const organizers = [
     {
       name: "Punit Pal",
-      role: "Community Head",
+      role: "Founder of Builder Base",
       // bio: "Former Google engineer, startup founder, and hackathon enthusiast with 10+ years in tech.",
-      avatar: "👩‍🎨",
+      avatar: "🤴",
       social: {
         linkedin: "https://www.linkedin.com/in/punit05/"
       }
@@ -60,7 +60,16 @@ const Team = () => {
         linkedin: "https://www.linkedin.com/in/advay-anand-a89024277/",
         github: "https://github.com/advay77"
       }
-    }
+    },
+    {
+      name: "Aditya Pandey",
+      role: "Founder of Nerds Room",
+      // bio: "Corporate partnerships expert specializing in tech industry collaborations and sponsorships.",
+      avatar: "👨‍🎤",
+      social: {
+        linkedin: "https://www.linkedin.com/in/aditya-pandey-ncr/"
+      }
+    }    
   ];
 
   return (
