@@ -1,20 +1,21 @@
 import { Calendar, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import synergixLogo from "@/assets/synergix-logo.png";
+import heroBg from "/hero-bg.mp4";
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Video */}
       <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/assets/hero-bg.mp4" // Place your video file in public/assets or src/assets
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src={heroBg}
         autoPlay
         loop
         muted
         playsInline
       />
-      <div className="absolute inset-0 gradient-hero z-0" />
+      {/* <div className="absolute inset-0 gradient-hero z-0" /> */}
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="mb-8">
@@ -76,9 +77,9 @@ const Hero = () => {
       </div>
       
       {/* Animated background elements */}
-      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-60" />
+      {/* <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-60" />
       <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary rounded-full animate-pulse opacity-40" />
-      <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-pulse opacity-50" />
+      <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-pulse opacity-50" /> */}
     </section>
   );
 };
