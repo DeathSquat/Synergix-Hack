@@ -30,7 +30,9 @@ const Footer = () => {
 
   return (
     <footer className="py-20 bg-gradient-card bg-cover bg-center bg-no-repeat"
-    style={{ backgroundImage: 'url("1.jpg")' }}>
+    style={{ backgroundImage: 'url("1.jpg")',
+            backgroundColor: "rgba(0,0,0,0.6)",
+            backgroundBlendMode: "darken" }}>
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Logo and Description */}

@@ -67,14 +67,16 @@ const Rewards = () => {
   return (
     <section id="rewards" 
     className="py-20 bg-gradient-card bg-cover bg-center bg-no-repeat"
-    style={{ backgroundImage: 'url("5.jpg")' }}>
+    style={{ backgroundImage: 'url("5.jpg")',
+    backgroundColor: "rgba(0,0,0,0.6)",
+    backgroundBlendMode: "darken" }}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
             Epic <span className="gradient-primary bg-clip-text text-transparent">Rewards</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Compete for over $66,000 in prizes, mentorship opportunities, and exclusive perks
+            Compete for prizes, mentorship opportunities, and exclusive perks
           </p>
         </div>
 
