@@ -117,3 +117,9 @@ All colors MUST be HSL.
     font-sans;
   }
 }
+
+/* Auto */
+#root .min-h-screen > .mx-auto{
+ padding-left:0px;
+ padding-right:0px;
+}

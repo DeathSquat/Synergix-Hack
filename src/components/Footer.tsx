@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-muted-foreground text-sm">
-              © 2025 SYNERGIX. All rights reserved. Built with ❤️ by Nishchay Chaurasia.
+              © 2025 SYNERGIX. All rights reserved. Built with ❤️ by SYNERGIX tech team
             </div>
           </div>
         </div>
