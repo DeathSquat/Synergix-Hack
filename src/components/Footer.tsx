@@ -116,9 +116,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Decorative elements */}
-      <div className="absolute bottom-0 left-0 w-full h-1 gradient-primary opacity-50" />
     </footer>
   );
 };

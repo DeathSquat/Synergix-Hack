@@ -46,16 +46,6 @@ const ParallaxBackground = () => {
         ))}
       </div>
 
-      {/* Scanning Lines */}
-      <div className="absolute inset-0">
-        <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent animate-cyber-scan" 
-             style={{ top: '20%' }} />
-        <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent animate-cyber-scan" 
-             style={{ top: '60%', animationDelay: '1.5s' }} />
-        <div className="absolute w-full h-px bg-gradient-to-r from-transparent via-primary/40 to-transparent animate-cyber-scan" 
-             style={{ top: '80%', animationDelay: '3s' }} />
-      </div>
-
       {/* Particle Field */}
       <div 
         className="absolute inset-0"

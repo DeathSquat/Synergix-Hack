@@ -102,18 +102,6 @@ const SamuraiLoader = ({ onLoadComplete }: SamuraiLoaderProps) => {
         />
       </div>
 
-      {/* Scan Lines */}
-      <div className="absolute inset-0">
-        <div
-          className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-primary/60 to-transparent animate-cyber-scan"
-          style={{ top: "30%" }}
-        />
-        <div
-          className="absolute w-full h-0.5 bg-gradient-to-r from-transparent via-primary/40 to-transparent animate-cyber-scan"
-          style={{ top: "70%", animationDelay: "1s" }}
-        />
-      </div>
-
       <div className="relative z-10 text-center max-w-md mx-auto px-6">
         {/* Samurai Symbol */}
         <div className="mb-8 animate-scale-in">
@@ -192,13 +180,6 @@ const SamuraiLoader = ({ onLoadComplete }: SamuraiLoaderProps) => {
           </p>
         </div>
 
-        {/* Honor Quote */}
-        <div className="mt-10 text-center animate-slide-in-up" style={{ animationDelay: "2s" }}>
-          <p className="text-xs text-muted-foreground italic opacity-70 font-mono tracking-wider animate-hologram-flicker">
-            "Code with Honor, Hack with Precision"
-          </p>
-          <div className="w-full h-px bg-gradient-to-r from-transparent via-primary/50 to-transparent mt-2" />
-        </div>
       </div>
     </div>
   );
