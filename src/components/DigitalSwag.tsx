@@ -41,8 +41,8 @@ const DigitalSwag: React.FC = () => {
   const handleShare = () => {
     if (navigator.share) {
       navigator.share({
-        title: 'My AceHack 4.0 Digital Badge',
-        text: 'Check out my personalized AceHack 4.0 digital badge!',
+        title: 'My SYNERGIX Digital Badge',
+        text: 'Check out my personalized SYNERGIX digital badge!',
         url: window.location.href,
       })
         .then(() => console.log('Successful share'))
@@ -63,12 +63,12 @@ const DigitalSwag: React.FC = () => {
           </div>
         </div>
         <div className="flex flex-col items-start max-w-md m-8">
-          <h2 className="text-4xl font-bold mb-4 text-glow">AceHack 4.0 Digital Badge</h2>
+          <h2 className="text-4xl font-bold mb-4 text-glow">SYNERGIX Digital Badge</h2>
           <p className="mb-4 text-muted-foreground">
-            Ready to rock AceHack 4.0? Show the world your excitement with our exclusive digital badge!
+            Ready to rock SYNERGIX? Show the world your excitement with our exclusive digital badge!
           </p>
           <p className="mb-4 text-muted-foreground">
-            Personalize your AceHack 4.0 Badge with your name and photo. Download it and spread the word on social media using #AceHack and tagging @AceHackuemj.
+            Personalize your SYNERGIX Badge with your name and photo. Download it and spread the word on social media using #SYNERGIX and tagging @SynergixHack.
           </p>
           <p className="text-sm mb-4 text-muted-foreground">
             *Your privacy matters! We never store your images on our servers.

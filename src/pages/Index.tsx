@@ -11,7 +11,6 @@ import Sponsors from "@/components/Sponsors";
 import Team from "@/components/Team";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
-import DigitalSwag from "@/components/DigitalSwag";
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,9 +70,6 @@ const Index = () => {
           <FAQ />
         </div>
         <div className="animate-slide-in-up" style={{ animationDelay: '0.9s' }}>
-          <DigitalSwag />
-        </div>
-        <div className="animate-slide-in-up" style={{ animationDelay: '1s' }}>
           <Footer />
         </div>
       </div>
