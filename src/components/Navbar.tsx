@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import synergixLogo from "@/assets/synergix-logo.png";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -24,6 +24,7 @@ const Navbar = () => {
     { href: "#sponsors", label: "Sponsors" },
     { href: "#team", label: "Team" },
     { href: "#faqs", label: "FAQs" },
+    { href: "/swag", label: "Swag"}
   ];
 
   const scrollToSection = (href: string) => {
@@ -51,13 +52,15 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
-              <button
+              <Link
                 key={item.href}
+                to={item.href}
                 onClick={() => scrollToSection(item.href)}
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
+                
               >
                 {item.label}
-              </button>
+              </Link>
             ))}
             <a href="https://unstop.com/" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="glow-effect">
