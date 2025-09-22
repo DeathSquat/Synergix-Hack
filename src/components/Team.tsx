@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Globe, Linkedin, Twitter } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -69,37 +69,64 @@ const Team = () => {
       social: {
         linkedin: "https://www.linkedin.com/in/aditya-pandey-ncr/"
       }
-    }    
+    },
+    {
+      name: "Aditya",
+      role: "Developer",
+      avatar: "👨‍💻",
+      social: {
+        linkedin: "https://www.linkedin.com/in/itisaddy/",
+        github: "https://github.com/Xenonesis",
+        portfolio: "https://iaddy.netlify.app/"
+      }
+    }
   ];
 
   return (
-    <section id="team" 
-    className="py-20 bg-gradient-card bg-cover bg-center bg-no-repeat"
+    <section id="team"
+    className="py-20 bg-gradient-card bg-cover bg-center bg-no-repeat relative overflow-hidden"
     style={{ backgroundImage: 'url("7.jpg")',
     backgroundColor: "rgba(0,0,0,0.6)",
     backgroundBlendMode: "darken" }}>
-      <div className="container mx-auto px-4">
+      {/* Animated background elements */}
+      <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-60"></div>
+      <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-primary rounded-full animate-pulse opacity-40"></div>
+      <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-primary rounded-full animate-pulse opacity-50"></div>
+      <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-primary rounded-full animate-pulse opacity-30"></div>
+      <div className="absolute bottom-1/3 right-1/4 w-2 h-2 bg-primary rounded-full animate-pulse opacity-50"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-glow">
             Meet The <span className="gradient-primary bg-clip-text text-transparent">Team</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Our passionate team of organizers, mentors, and volunteers working tirelessly 
+            Our passionate team of organizers, mentors, and volunteers working tirelessly
             to make SYNERGIX an unforgettable experience
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {organizers.map((member, index) => (
-            <Card key={index} className="gradient-card border-glow hover:shadow-glow transition-all duration-300 group">
+            <Card
+              key={index}
+              className="gradient-card border-glow hover:shadow-glow transition-all duration-300 group"
+              style={{
+                animation: `fadeInUp 0.5s ease-out ${index * 0.1}s both`,
+                opacity: 0
+              }}
+            >
               <CardContent className="p-6 text-center">
-                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  {member.avatar}
+                <div className="relative flex justify-center items-center mb-4">
+                  <div className="absolute w-24 h-24 rounded-full border-2 border-primary animate-pulse opacity-30"></div>
+                  <div className="relative text-5xl bg-gradient-card rounded-full w-20 h-20 flex items-center justify-center border-2 border-primary mb-4 group-hover:scale-110 transition-transform duration-300 glow-effect">
+                    {member.avatar}
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-1">
+                <h3 className="text-xl font-bold text-foreground mb-1 text-glow">
                   {member.name}
                 </h3>
-                <div className="text-primary font-medium mb-3">
+                <div className="text-primary font-medium mb-3 italic">
                   {member.role}
                 </div>
                 {/* <p className="text-muted-foreground text-sm mb-4 leading-relaxed">
@@ -107,23 +134,30 @@ const Team = () => {
                 </p> */}
                 <div className="flex justify-center space-x-2">
                   {member.social.linkedin && (
-                    <Button variant="outline" size="sm" className="p-2" asChild>
-                      <a href={member.social.linkedin} aria-label="LinkedIn">
+                    <Button variant="outline" size="sm" className="p-2 hover:scale-110 transition-transform duration-300 border-glow hover:shadow-glow" asChild>
+                      <a href={member.social.linkedin} aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="h-4 w-4" />
                       </a>
                     </Button>
                   )}
                   {/* {member.social.twitter && (
-                    <Button variant="outline" size="sm" className="p-2" asChild>
-                      <a href={member.social.twitter} aria-label="Twitter">
+                    <Button variant="outline" size="sm" className="p-2 hover:scale-110 transition-transform duration-300 border-glow hover:shadow-glow" asChild>
+                      <a href={member.social.twitter} aria-label="Twitter" target="_blank" rel="noopener noreferrer">
                         <Twitter className="h-4 w-4" />
                       </a>
                     </Button>
                   )} */}
                   {member.social.github && (
-                    <Button variant="outline" size="sm" className="p-2" asChild>
-                      <a href={member.social.github} aria-label="GitHub">
+                    <Button variant="outline" size="sm" className="p-2 hover:scale-110 transition-transform duration-300 border-glow hover:shadow-glow" asChild>
+                      <a href={member.social.github} aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4" />
+                      </a>
+                    </Button>
+                  )}
+                  {member.social.portfolio && (
+                    <Button variant="outline" size="sm" className="p-2 hover:scale-110 transition-transform duration-300 border-glow hover:shadow-glow" asChild>
+                      <a href={member.social.portfolio} aria-label="Portfolio" target="_blank" rel="noopener noreferrer">
+                        <Globe className="h-4 w-4" />
                       </a>
                     </Button>
                   )}

@@ -106,6 +106,18 @@ All colors MUST be HSL.
     border: 1px solid hsl(0 84% 60% / 0.3);
     box-shadow: 0 0 20px hsl(0 84% 60% / 0.1);
   }
+  
+  /* Fade in up animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 
 @layer base {
