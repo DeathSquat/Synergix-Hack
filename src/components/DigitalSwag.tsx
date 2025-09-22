@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
+import synergixLogo from "@/assets/synergix-logo.png";
 
 const DigitalSwag: React.FC = () => {
   const [name, setName] = useState('Your Name Here');
@@ -206,7 +207,7 @@ const DigitalSwag: React.FC = () => {
                         className="w-48 h-48 rounded-full object-cover border-4 border-primary shadow-lg"
                       />
                       <img
-                        src="/src/assets/synergix-logo.png"
+                        src={synergixLogo}
                         alt="Synergix Logo"
                         className="absolute bottom-0 right-0 w-16 h-16"
                       />
@@ -261,7 +262,7 @@ const DigitalSwag: React.FC = () => {
                             className="w-full h-full object-cover"
                           />
                           <img
-                            src="/src/assets/synergix-logo.png"
+                            src={synergixLogo}
                             alt="Synergix Logo"
                             className="absolute bottom-2 right-2 w-12 h-12"
                           />
