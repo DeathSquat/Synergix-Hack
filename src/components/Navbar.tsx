@@ -86,13 +86,14 @@ const Navbar = () => {
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 gradient-card border-t border-border">
               {navItems.map((item) => (
-                <button
+                <Link
+                  to={item.href}
                   key={item.href}
                   onClick={() => scrollToSection(item.href)}
                   className="block px-3 py-2 text-foreground hover:text-primary transition-colors duration-200 font-medium w-full text-left"
                 >
                   {item.label}
-                </button>
+                </Link>
               ))}
               <div className="px-3 py-2">
                 <Button variant="outline" className="w-full glow-effect">
