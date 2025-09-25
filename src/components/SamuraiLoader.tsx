@@ -11,21 +11,21 @@ const SamuraiLoader = ({ onLoadComplete }: SamuraiLoaderProps) => {
 
   useEffect(() => {
     const phases = [
-      { duration: 1000, text: "Awakening the Digital Samurai..." },
-      { duration: 1500, text: "Forging Cyber Katana..." },
-      { duration: 1200, text: "Channeling Hackathon Spirit..." },
-      { duration: 800, text: "SYNERGIX Loading Complete" }
+      { duration: 600, text: "Awakening the Digital Samurai..." },
+      { duration: 800, text: "Forging Cyber Katana..." },
+      { duration: 700, text: "Channeling Hackathon Spirit..." },
+      { duration: 500, text: "SYNERGIX Loading Complete" }
     ];
 
     let currentPhase = 0;
     let progressValue = 0;
 
-    setTimeout(() => setShowSamuraiText(true), 500);
+    setTimeout(() => setShowSamuraiText(true), 200);
 
     const updateProgress = () => {
       if (currentPhase < phases.length) {
         const increment = 25; 
-        progressValue += 0.5;
+        progressValue += 0.8;
         
         if (progressValue >= (currentPhase + 1) * increment) {
           currentPhase++;
@@ -35,9 +35,9 @@ const SamuraiLoader = ({ onLoadComplete }: SamuraiLoaderProps) => {
         setProgress(Math.min(progressValue, 100));
 
         if (progressValue < 100) {
-          setTimeout(updateProgress, 30);
+          setTimeout(updateProgress, 20);
         } else {
-          setTimeout(onLoadComplete, 500);
+          setTimeout(onLoadComplete, 200);
         }
       }
     };

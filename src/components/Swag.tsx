@@ -129,11 +129,8 @@ const SwagGenerator = () => {
         <div className="text-center mb-10 sm:mb-12">
           <div className="flex justify-center mb-4">
             <div className="text-yellow-400 font-black text-2xl sm:text-4xl tracking-wider" style={{fontFamily: "'Orbitron', monospace"}}>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r text-red-600 text-glow">
-                SYNER
-              </span>
               <span className="text-red-600 text-glow ml-2">
-                GIX
+                SYNERGIX
               </span>
             </div>
           </div>
