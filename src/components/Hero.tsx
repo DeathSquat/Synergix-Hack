@@ -1,9 +1,12 @@
 import { Calendar, MapPin, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import synergixLogo from "@/assets/synergix-logo.png";
 import heroBg from "/hero-bg.mp4";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Background Video */}
@@ -44,19 +47,14 @@ const Hero = () => {
                 Register Now
               </Button>
             </a>
-            <Button
+            {/* <Button
               size="lg"
               variant="outline"
               className="border-glow text-lg px-8 py-3"
-              onClick={() => {
-                const aboutSection = document.getElementById('about');
-                if (aboutSection) {
-                  aboutSection.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
+              onClick={() => navigate('/leaderboard')}
             >
-              Learn More
-            </Button>
+              Leaderboard
+            </Button> */}
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
