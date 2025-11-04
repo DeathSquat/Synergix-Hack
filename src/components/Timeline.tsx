@@ -3,39 +3,47 @@ import { Calendar, Clock, Flag, Trophy } from "lucide-react";
 const Timeline = () => {
   const events = [
     {
-      date: "12-13 September, 2025",
+      date: "30 October, 2025",
       // time: "12:00 AM",
       title: "Registration Starts",
-      description: "Registration for Hackathon starts via Unstop",
+      description: "Registration for Hackathon starts via Reskill",
       icon: <Flag className="h-5 w-5" />,
-      status: "upcoming"
+      status: "ongoing"
     },
     {
-      date: "19-20 September, 2025",
+      date: "6 November, 2025",
       // time: "11:59 PM",
       title: "Submission Starts",
-      description: "Submission of Projects Starts",
+      description: "Submission of Projects Starts via Unstop",
       icon: <Clock className="h-5 w-5" />,
       status: "upcoming"
     },
     {
-      date: "17-18 October, 2025",
+      date: "10 November, 2025",
       // time: "6:00 PM",
-      title: "Submission Closes",
-      description: "Submission of Projects Ends",
+      title: "Registration Closes",
+      description: "Registration for Hackathon ends on Reskill",
       icon: <Calendar className="h-5 w-5" />,
       status: "upcoming"
     },
     {
-      date: "8-9 November, 2025",
+      date: "12 November, 2025",
       // time: "8:00 PM",
-      title: "Online Round",
-      description: "Online round (Round-2) of Hackathon",
+      title: "Submission Closes",
+      description: "Submission of Projects Ends on Unstop",      
       icon: <Clock className="h-5 w-5" />,
       status: "upcoming"
     },
     {
       date: "15-16 November, 2025",
+      // time: "All Day",
+      title: "Online Round",
+      description: "Online round (Round-2) of Hackathon",  
+      icon: <Clock className="h-5 w-5" />,
+      status: "upcoming"
+    },  
+    {
+      date: "29 November, 2025",
       // time: "All Day",
       title: "Final Offline Round",
       description: "Final Offline Round (Round-3) of Hackathon",
@@ -43,7 +51,7 @@ const Timeline = () => {
       status: "upcoming"
     },
     {
-      date: "16 November, 2025",
+      date: "29 November, 2025",
       // time: "6:00 PM",
       title: "Closing Ceremony",
       description: "Closing Ceremony (Curtains Down) of Hackathon",
@@ -103,11 +111,11 @@ const Timeline = () => {
                         {event.description}
                       </p>
                       <div className={`inline-block px-3 py-1 rounded-full text-xs font-medium mt-3 ${
-                        event.status === 'completed' 
+                        event.status === 'ongoing' 
                           ? 'bg-primary/20 text-primary' 
                           : 'bg-muted text-muted-foreground'
                       }`}>
-                        {event.status === 'completed' ? 'Completed' : 'Upcoming'}
+                        {event.status === 'ongoing' ? 'ongoing' : 'Upcoming'}
                       </div>
                     </div>
                   </div>

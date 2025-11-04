@@ -7,7 +7,7 @@ const Footer = () => {
     { icon: <Linkedin className="h-5 w-5" />, href: "https://www.linkedin.com/company/synergix-hacks/", label: "LinkedIn" },
     { icon: <Mail className="h-5 w-5" />, href: "mailto:info@synergix.com", label: "Email" },
     {icon: <MessageCircle className="h-5 w-5 text-green-500" />, 
-      href: "https://whatsapp.com/channel/0029Vb78TA9E50UmxVpEW21N", 
+      href: "https://chat.whatsapp.com/E4gRssoD0VgHF8NqciXft8?mode=wwt", 
       label: "WhatsApp" }
   ];
 
@@ -52,10 +52,6 @@ const Footer = () => {
               <div className="flex items-center space-x-3 text-muted-foreground">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>Punit Pal (+91 96503 80372)</span>
-              </div>
-              <div className="flex items-center space-x-3 text-muted-foreground">
-                <Mail className="h-4 w-4 text-primary" />
-                <span>TBA</span>
               </div>
             </div>
           </div>

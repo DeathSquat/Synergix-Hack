@@ -90,7 +90,7 @@ const Sponsors = () => {
         </div>
 
         {/* Become a Sponsor */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <div className="gradient-card border-glow rounded-lg p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold mb-4 text-foreground">
               Become a Sponsor
@@ -111,10 +111,10 @@ const Sponsors = () => {
                 className="inline-flex items-center justify-center px-6 py-3 border border-primary rounded-lg font-medium text-primary hover:bg-primary/10 transition-all duration-300"
               >
                 Download Prospectus
-              </a> */}
+              </a> 
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

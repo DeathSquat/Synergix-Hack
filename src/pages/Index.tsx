@@ -60,9 +60,9 @@ const Index = () => {
         <div className="animate-slide-in-up" style={{ animationDelay: '0.5s' }}>
           <Rewards />
         </div>
-        <div className="animate-slide-in-up" style={{ animationDelay: '0.6s' }}>
+        {/* <div className="animate-slide-in-up" style={{ animationDelay: '0.6s' }}>
           <Sponsors />
-        </div>
+        </div> */}
         <div className="animate-slide-in-up" style={{ animationDelay: '0.7s' }}>
           <Team />
         </div>

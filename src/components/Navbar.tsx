@@ -22,7 +22,7 @@ const Navbar = () => {
     { href: "#timeline", label: "Timeline" },
     { href: "#tracks", label: "Tracks" },
     { href: "#rewards", label: "Rewards" },
-    { href: "#sponsors", label: "Sponsors" },
+    // { href: "#sponsors", label: "Sponsors" },
     { href: "#team", label: "Team" },
     { href: "#faqs", label: "FAQs" },
     { href: "/swag", label: "Swag"}
@@ -68,7 +68,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <a href="https://unstop.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://reskilll.com/hack/synergixhackathon" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="glow-effect">
                 Register Now
               </Button>

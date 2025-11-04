@@ -37,8 +37,7 @@ const Team = () => {
       // bio: "Developer relations specialist focused on building inclusive and vibrant tech communities.",
       avatar: "👨‍💼",
       social: {
-        linkedin: "https://www.linkedin.com/in/its-apoorv-/",
-        github: "https://github.com/programmerbeast2004"
+        linkedin: "https://www.linkedin.com/in/its-apoorv-/"
       }
     },
     {
@@ -47,29 +46,18 @@ const Team = () => {
       // bio: "Venture capitalist and serial entrepreneur connecting startups with industry mentors.",
       avatar: "👨‍💻",
       social: {
-        linkedin: "https://www.linkedin.com/in/nishchaync-83b8152b0/",
-        github: "https://github.com/DeathSquat"
+        linkedin: "https://www.linkedin.com/in/nishchaync-83b8152b0/"
       }
     },
-    {
-      name: "Advay Anand",
-      role: "Sponsorship Head",
-      // bio: "Corporate partnerships expert specializing in tech industry collaborations and sponsorships.",
-      avatar: "👨‍🏫",
-      social: {
-        linkedin: "https://www.linkedin.com/in/advay-anand-a89024277/",
-        github: "https://github.com/advay77"
-      }
-    },
-    {
-      name: "Aditya Pandey",
-      role: "Founder of Nerds Room",
-      // bio: "Corporate partnerships expert specializing in tech industry collaborations and sponsorships.",
-      avatar: "👨‍🎤",
-      social: {
-        linkedin: "https://www.linkedin.com/in/aditya-pandey-ncr/"
-      }
-    }    
+    // {
+    //   name: "Advay Anand",
+    //   role: "Sponsorship Head",
+    //   // bio: "Corporate partnerships expert specializing in tech industry collaborations and sponsorships.",
+    //   avatar: "👨‍🏫",
+    //   social: {
+    //     linkedin: "https://www.linkedin.com/in/advay-anand-a89024277/"
+    //   }
+    // },  
   ];
 
   return (
@@ -120,13 +108,13 @@ const Team = () => {
                       </a>
                     </Button>
                   )} */}
-                  {member.social.github && (
+                  {/* {member.social.github && (
                     <Button variant="outline" size="sm" className="p-2" asChild>
                       <a href={member.social.github} aria-label="GitHub">
                         <Github className="h-4 w-4" />
                       </a>
                     </Button>
-                  )}
+                  )} */}
                 </div>
               </CardContent>
             </Card>
