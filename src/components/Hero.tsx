@@ -37,7 +37,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Join the ultimate 24-hour hackathon experience. Build revolutionary solutions, 
+            Join the ultimate 8-hour hackathon experience. Build revolutionary solutions, 
             connect with brilliant minds, and compete for incredible prizes.
           </p>
           
