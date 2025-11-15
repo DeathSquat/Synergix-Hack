@@ -379,9 +379,11 @@ const SwagGenerator = () => {
                       document.body.removeChild(link);
                       
                       // Create tweet text
-                      const tweetText = `🚀 Just created my exclusive #Synergix2025 #BuilderBase Swag Card! ${
+                      const tweetText = `🚀 Just created my exclusive #Synergix2025 Swag Card with @theBuilder_base! ${
                         participantName ? `Hey! I'm ${participantName}, ` : ''
-                      }thrilled to be part of this amazing hackathon experience!`;
+                      }thrilled to be part of this amazing hackathon experience!
+                      
+                      #Hackathon #TechCommunity`;
                       
                       // Open Twitter with the text (user can manually attach the downloaded image)
                       const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
