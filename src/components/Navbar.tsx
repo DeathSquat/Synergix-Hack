@@ -68,9 +68,9 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <a href="https://reskilll.com/hack/synergixhackathon" target="_blank" rel="noopener noreferrer">
+            <a href="https://tinyurl.com/2eed39yp" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="glow-effect">
-                Register Now
+                Submit Now
               </Button>
             </a>
           </div>
@@ -101,9 +101,11 @@ const Navbar = () => {
                 </button>
               ))}
               <div className="px-3 py-2">
-                <Button variant="outline" className="w-full glow-effect">
-                  Register Now
-                </Button>
+                <a href="https://tinyurl.com/2eed39yp" target="_blank" rel="noopener noreferrer">
+                  <Button variant="outline" className="w-full glow-effect">
+                    Submit Now
+                  </Button>
+                </a>
               </div>
             </div>
           </div>

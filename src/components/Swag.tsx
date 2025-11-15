@@ -342,13 +342,64 @@ const SwagGenerator = () => {
 
             {/* Download Button */}
             {participantName && uploadedImage && (
-              <button
-                onClick={handleDownload}
-                className="mt-5 sm:mt-6 px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r to-orange-600 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 flex items-center gap-2 text-sm sm:text-base"
-              >
-                <Download className="w-4 h-4 sm:w-5 sm:h-5" />
-                Download Card
-              </button>
+              <div className="flex gap-3 mt-5 sm:mt-6">
+                <button
+                  onClick={handleDownload}
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r to-orange-600 to-red-600 hover:from-red-600 hover:to-red-700 text-white font-bold rounded-xl transition-all transform hover:scale-105 flex items-center gap-2 text-sm sm:text-base"
+                >
+                  <Download className="w-4 h-4 sm:w-5 sm:h-5" />
+                  Download
+                </button>
+                <button
+                  onClick={async () => {
+                    try {
+                      const cardElement = document.getElementById('swag-card');
+                      if (!cardElement) return;
+                      
+                      // Create canvas and get image data
+                      const canvas = await html2canvas(cardElement, { 
+                        scale: 2,
+                        useCORS: true,
+                        logging: false
+                      });
+                      
+                      // Convert canvas to data URL
+                      const imageDataUrl = canvas.toDataURL('image/png');
+                      
+                      // Create a temporary link to download the image
+                      const link = document.createElement('a');
+                      const timestamp = new Date().getTime();
+                      const filename = `synergix-swag-${timestamp}.png`;
+                      link.download = filename;
+                      link.href = imageDataUrl;
+                      
+                      // Trigger download
+                      document.body.appendChild(link);
+                      link.click();
+                      document.body.removeChild(link);
+                      
+                      // Create tweet text
+                      const tweetText = `🚀 Just created my exclusive #Synergix2025 #BuilderBase Swag Card! ${
+                        participantName ? `Hey! I'm ${participantName}, ` : ''
+                      }thrilled to be part of this amazing hackathon experience!`;
+                      
+                      // Open Twitter with the text (user can manually attach the downloaded image)
+                      const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
+                      window.open(twitterUrl, '_blank');
+                      
+                    } catch (error) {
+                      console.error('Error sharing to X:', error);
+                      alert('Failed to share on X. Please download the image and share it manually on X.');
+                    }
+                  }}
+                  className="px-6 sm:px-8 py-2.5 sm:py-3 bg-black hover:bg-gray-800 text-white font-bold rounded-xl transition-all transform hover:scale-105 flex items-center gap-2 text-sm sm:text-base"
+                >
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                  Share on X
+                </button>
+              </div>
             )}
           </div>
         </div>
