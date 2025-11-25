@@ -17,7 +17,7 @@ const FAQ = () => {
     },
     {
       question: "What should I bring to the hackathon?",
-      answer: "Bring your laptop, chargers, any hardware you might need, and your creativity! We'll provide meals, snacks, WiFi, and workspace. Don't forget comfortable clothes for the 48-hour journey."
+      answer: "Bring your laptop, chargers, any hardware you might need, and your creativity! We'll provide meals, snacks, WiFi, and workspace."
     },
     {
       question: "What if I'm a beginner programmer?",

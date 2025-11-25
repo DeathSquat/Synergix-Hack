@@ -42,14 +42,9 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            {/* <a href="https://reskilll.com/hack/synergixhackathon" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/iGy6bdJkC715kkQ58" target="_blank" rel="noopener noreferrer">
               <Button size="lg" className="gradient-primary glow-effect text-lg px-8 py-3">
-                Register on Reskill
-              </Button>
-            </a> */}
-            <a href="https://tinyurl.com/2eed39yp" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="gradient-primary glow-effect text-lg px-8 py-3">
-                Submit on Unstop
+                Submit Prototype
               </Button>
             </a>
             {/* <Button

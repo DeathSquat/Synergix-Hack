@@ -68,9 +68,9 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <a href="https://tinyurl.com/2eed39yp" target="_blank" rel="noopener noreferrer">
+            <a href="https://forms.gle/iGy6bdJkC715kkQ58" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" className="glow-effect">
-                Submit Now
+                Submit Prototype
               </Button>
             </a>
           </div>
@@ -101,9 +101,9 @@ const Navbar = () => {
                 </button>
               ))}
               <div className="px-3 py-2">
-                <a href="https://tinyurl.com/2eed39yp" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/iGy6bdJkC715kkQ58" target="_blank" rel="noopener noreferrer">
                   <Button variant="outline" className="w-full glow-effect">
-                    Submit Now
+                    Submit Prototype
                   </Button>
                 </a>
               </div>
