@@ -6,7 +6,7 @@ const About = () => {
     {
       icon: <Code className="h-8 w-8 text-primary" />,
       title: "Innovation Challenge",
-      description: "24 hours to build revolutionary solutions that push the boundaries of technology"
+      description: "8 hours to build revolutionary solutions that push the boundaries of technology"
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
@@ -40,7 +40,7 @@ const About = () => {
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             SYNERGIX isn't just another hackathon—it's where innovation meets execution. 
-            Join us for an intense 24-hour journey where creativity, technology, and collaboration 
+            Join us for an intense 8-hour journey where creativity, technology, and collaboration 
             converge to create the future.
           </p>
         </div>

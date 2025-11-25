@@ -16,7 +16,7 @@ const Timeline = () => {
       title: "Submission Starts",
       description: "Submission of Projects Starts via Unstop",
       icon: <Clock className="h-5 w-5" />,
-      status: "upcoming"
+      status: "ongoing"
     },
     {
       date: "10 November, 2025",
@@ -24,7 +24,7 @@ const Timeline = () => {
       title: "Registration Closes",
       description: "Registration for Hackathon ends on Reskill",
       icon: <Calendar className="h-5 w-5" />,
-      status: "upcoming"
+      status: "ongoing"
     },
     {
       date: "12 November, 2025",
@@ -32,7 +32,7 @@ const Timeline = () => {
       title: "Submission Closes",
       description: "Submission of Projects Ends on Unstop",      
       icon: <Clock className="h-5 w-5" />,
-      status: "upcoming"
+      status: "ongoing"
     },
     {
       date: "15-16 November, 2025",
@@ -40,7 +40,7 @@ const Timeline = () => {
       title: "Online Round",
       description: "Online round (Round-2) of Hackathon",  
       icon: <Clock className="h-5 w-5" />,
-      status: "upcoming"
+      status: "ongoing"
     },  
     {
       date: "29 November, 2025",
